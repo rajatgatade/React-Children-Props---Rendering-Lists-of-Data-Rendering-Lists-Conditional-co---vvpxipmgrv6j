@@ -1,14 +1,13 @@
 import React from 'react'
 
-const ChildComponent = () => {
-//code here
+const ChildComponent = (props) => {
   return (
     <div id="child">
-      Find The Square <br/>
-     
+      {props.children}
+      <br/>
+      Find The Square
     </div>
   )
 }
-
 
 export default ChildComponent;
